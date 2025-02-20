@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин прикрас для пірсингу та догляду</title>
+    <link rel="stylesheet" href="styles_shop.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Магазин прикрас для пірсингу та догляду</h1>
+            <nav>
+                <button><a href="index.html">Головна</a></button>
+                <button class="filter-btn" data-category="all">Всі товари</button>
+                <button class="filter-btn" data-category="piercing">Прикраси та догляд для пірсингу</button>
+                <button class="filter-btn" data-category="care">Засоби догляду</button>
+                <button id="cart-btn">Переглянути кошик</button>
+            </nav>
+        </header>
+        <main>
+            <section id="products" class="products-grid"></section>
+        </main>
+    </div>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ваш кошик</h2>
+            <div id="cart-items"></div>
+            <button id="checkout-btn">Оплатити</button>
+            <button id="clear-cart">Скасувати</button>
+        </div>
+    </div>
+
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Оформлення замовлення</h2>
+            <form id="checkout-form">
+                <label>Вулиця:</label>
+                <input type="text" required>
+                <label>Номер телефону:</label>
+                <input type="tel" required>
+                <label>Номер картки:</label>
+                <input type="text" required>
+                <button type="submit">Підтвердити оплату</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ваше замовлення прийнято!</h2>
+            <p>Дякуємо за покупку!</p>
+            <button id="close-success">Закрити</button>
+        </div>
+    </div>
+
+    <script src="shop.js"></script>
+</body>
+</html>

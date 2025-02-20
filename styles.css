@@ -1,0 +1,183 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    background-image: url('tatoo_m.png');
+    background-repeat: repeat;
+    background-position: left top, right top;
+    background-size: 400px auto;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+header .logo {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+nav ul li a {
+    color: #ff4500;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+main {
+    margin-top: 20px;
+}
+.masters-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.master-card {
+    background-color: #2e2e2e;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    width: calc(33% - 20px);
+    box-sizing: border-box;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+.master-card img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.master-details p {
+    margin: 10px 0;
+}
+.master-details a {
+    color: #ff4500;
+    text-decoration: none;
+}
+.master-details a:hover {
+    text-decoration: underline;
+}
+.master-photos {
+    background-color: #2e2e2e;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.photos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+.photos-grid img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.photos-grid img:hover {
+    transform: scale(1.1);
+}
+.photos-grid img.new-photo {
+    width: 100px;
+    height: 100px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+.left-footer, .right-footer {
+    width: 45%;
+}
+.left-footer {
+    text-align: left;
+}
+.right-footer {
+    text-align: right;
+}
+h1, h2, h3, h4 {
+    font-family: 'Lucida Console', Monaco, monospace;
+    color: #ff4500;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+button {
+    background-color: #ff4500;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #e63900;
+}
+.side-popup {
+    position: fixed;
+    top: 50%;
+    right: -250px;
+    width: 250px;
+    padding: 10px;
+    background-color: #000000a6;
+    border: 1px solid #ff4500;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.753);
+    transition: right 0.3s;
+    transform: translateY(-50%);
+    z-index: 9999;
+}
+.side-popup h3 {
+    margin-top: 0;
+    color: #ff4500;
+}
+.side-popup ul {
+    list-style: none;
+    padding: 0;
+}
+.side-popup ul li {
+    margin: 5px 0;
+}
+.side-popup:hover {
+    right: 0;
+}
+button {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
